@@ -43,6 +43,8 @@ $(document).ready(function() {
 
         var id_campo_clicado = this.id;
 
+        $('#' + id_campo_clicado).off();
+
         jogada(id_campo_clicado);
 
     });
@@ -70,7 +72,6 @@ $(document).ready(function() {
 
        verifica_combinacao();
 
-       $('#' + id).off('click');
     }
 
     
